@@ -204,15 +204,24 @@
     margin-left: 0;
     padding: 1rem;
     margin-top: 4rem;
+
   }
   .work__container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(0,2fr);
     justify-content: center;
+    width: 60%;
+
   }
+  .work__filters{
+    display: inline-block;
+width: 80%;
+
+}
   .work__card {
     width: 100%;
     margin-bottom: 1rem;
+
   }
   .work__img {
     width: 100%;
@@ -225,5 +234,6 @@
   .work__item {
     font-size: 0.875rem;
     padding: 0.5rem;
+margin: 2px;
   }
 }

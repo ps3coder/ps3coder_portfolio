@@ -124,11 +124,12 @@ a:hover {
     padding: 0 0.5rem;
   }
   .bx {
-    font-size: 2.4rem;
+    font-size: 1.4rem;
   }
   .nav__menu {
-    width: 90%;
+    width: 80%;
     padding: 0.8rem 0;
+
   }
   .nav__list {
     gap: 2.5rem;
@@ -147,7 +148,7 @@ a:hover {
     padding: 0 0.5rem;
   }
   .bx {
-    font-size: 2.6rem;
+    font-size: 1.2rem;
   }
   .nav__menu {
     width: 95%;
