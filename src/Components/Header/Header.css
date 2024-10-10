@@ -118,3 +118,71 @@ a:hover {
     margin-left: 0;
   }
 }
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+  .bx {
+    font-size: 2.4rem;
+  }
+  .nav__menu {
+    width: 90%;
+    padding: 0.8rem 0;
+  }
+  .nav__list {
+    gap: 2.5rem;
+  }
+  .nav__link {
+    font-size: 1.4rem;
+  }
+  .nav__logo {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+  .bx {
+    font-size: 2.6rem;
+  }
+  .nav__menu {
+    width: 95%;
+    padding: 0.7rem 0;
+  }
+  .nav__list {
+    gap: 2rem;
+  }
+  .nav__link {
+    font-size: 1.3rem;
+  }
+  .nav__logo {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    max-width: 100%;
+    padding: 0 0.25rem;
+  }
+  .bx {
+    font-size: 2.8rem;
+  }
+  .nav__menu {
+    width: 100%;
+    padding: 0.6rem 0;
+  }
+  .nav__list {
+    gap: 1.5rem;
+  }
+  .nav__link {
+    font-size: 1.2rem;
+  }
+  .nav__logo {
+    font-size: 1.6rem;
+  }
+}

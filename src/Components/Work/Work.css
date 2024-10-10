@@ -180,3 +180,50 @@
     transform: translateY(0);
   }
 }
+/* For devices with max width of 640px (small tablets) */
+@media screen and (max-width: 640px) {
+  .work {
+    margin-left: 0;
+    padding: 1rem;
+    margin-top: 5rem;
+  }
+  .work__container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .work__card {
+    width: 85%;
+  }
+}
+
+ /* For devices with max width of 480px (mobile phones) */
+@media screen and (max-width: 480px) {
+  .work {
+    margin-left: 0;
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+  .work__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .work__card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .work__img {
+    width: 100%;
+    height: auto;
+  }
+  .work__filters {
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+  .work__item {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
+}

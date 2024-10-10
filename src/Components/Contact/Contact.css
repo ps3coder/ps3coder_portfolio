@@ -180,3 +180,77 @@
     opacity: 1;
   }
 }
+
+/* For devices with max width of 640px (small tablets) */
+@media screen and (max-width: 640px) {
+  .contact__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .contact__info, .contact__form-div, .contact__form-area {
+    max-width: 100%;
+  }
+
+  .contact__form-input, .contact__form-area textarea {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .contact__form-button {
+    width: 100%;
+  }
+
+  .contact__title {
+    font-size: 1.5rem;
+  }
+}
+
+/* For devices with max width of 480px (mobile phones) */
+@media screen and (max-width: 480px) {
+  .contact {
+    margin-top: 4rem;
+    padding: 1rem;
+  }
+
+  .contact__container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact__title {
+    font-size: 1.3rem;
+    margin-top: 6rem;
+  }
+
+  .contact__card {
+    padding: 1.5rem;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  .contact__form-div, .contact__form-area {
+    max-width: 100%;
+  }
+
+  .contact__form-input, .contact__form-area textarea {
+    padding: 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .contact__button {
+    font-size: 0.75rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .contact__form-button {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .contact__card-icon {
+    font-size: 2rem;
+  }
+}
