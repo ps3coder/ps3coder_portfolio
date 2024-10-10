@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  background: linear-gradient(85deg, #2e3a40, #4e6959);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+.bx {
+  font-size: 1.8rem;
+}
+.container {
+  max-width: 968px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  transition: max-width 0.3s ease;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: all 0.4s;
+}
+.nav__logo {
+  margin-left: 17rem;
+  font-size: 2.5rem;
+  color: #fad2b8;
+  transition: 0.4s;
+  margin-right: auto;
+  text-decoration: none;
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.nav__logo:hover {
+  transform: scale(1.01);
+}
+.nav__menu {
+  position: fixed;
+  bottom: 2rem;
+  background-color: rgba(19, 30, 26, 0.456);
+  transform: translateX(-50%);
+  left: 50%;
+  width: auto;
+  border-radius: 4rem;
+  padding: 1rem 2.25rem;
+  backdrop-filter: blur(5px);
+  transition: all 0.4s;
+  z-index: 10;
+  animation: slideIn 0.5s ease-in-out;
+}
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav__link {
+  color: #969e86;
+  font-size: 1.25rem;
+  padding: 0.4rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+}
+.nav__link:hover {
+  color: #51615e;
+  transform: translateY(-1px);
+}
+a:hover {
+  color: #fad2b8;
+  transition: color 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(-50%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+  .bx {
+    font-size: 2.2rem;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav__menu {
+    position: fixed;
+    width: 70%;
+    border-radius: 4rem;
+    padding: 1rem 0;
+    animation: none;
+  }
+  .nav__list {
+    gap: 3rem;
+  }
+  .nav__link {
+    font-size: 1.5rem;
+  }
+  .nav__logo {
+    margin-left: 0;
+  }
+}
